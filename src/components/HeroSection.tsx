@@ -52,7 +52,7 @@ const HeroSection = () => {
         <button className="bg-black/70 px-4 py-2 rounded-xl">View</button>
       </div>
       <div className="flex top-4 justify-center py-2">
-        {slides.map((dot, i) => (
+        {slides.map((_dot, i) => (
           <div
             key={i}
             className="text-2xl cursor-pointer "
