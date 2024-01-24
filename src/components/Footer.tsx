@@ -1,10 +1,18 @@
+import { FiMapPin } from "react-icons/fi";
+import { FaPhone } from "react-icons/fa";
+import { FaBook, FaLock } from "react-icons/fa";
+
 const Footer = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 m-4 md:m-8 gap-4">
       <div>
         <div className="text-xl mb-5 font-bold">Customer Service</div>
-        <div className="mb-2">Terms & Privacy Policy</div>
-        <div>Return Policy</div>
+        <div className="mb-2">
+          <FaBook className="inline-block" /> Terms & Privacy Policy
+        </div>
+        <div>
+          <FaLock className="inline-block" /> Return Policy
+        </div>
       </div>
 
       <div>
@@ -21,17 +29,42 @@ const Footer = () => {
               Myanmar (Unicode)
             </label>
           </div>
-          {/* Add similar input groups for other language options */}
+          <div className="flex items-center">
+            <input
+              type="radio"
+              id="option2"
+              name="options"
+              className="form-radio text-blue-500 h-5 w-5"
+            />
+            <label htmlFor="option2" className="ml-2">
+              Myanmar (Zawgyi)
+            </label>
+          </div>
+          <div className="flex items-center">
+            <input
+              type="radio"
+              id="option2"
+              name="options"
+              className="form-radio text-blue-500 h-5 w-5"
+            />
+            <label htmlFor="option1" className="ml-2">
+              English
+            </label>
+          </div>
         </div>
       </div>
 
       <div>
         <div className="text-xl mb-5 font-bold">Contact Us</div>
         <div className="">
+          <FiMapPin className=" inline-block mr-1 " />
           Lay Daunt Kan Main Road, Cashmere Stop, Near Zawana Thingangyn Tsp,
           Yangon{" "}
         </div>
-        <div>09458489458</div>
+        <div>
+          {" "}
+          <FaPhone className="inline-block" /> 09458489458
+        </div>
       </div>
 
       <div>
