@@ -2,13 +2,13 @@ const Footer = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 m-4 md:m-8 gap-4">
       <div>
-        <div className="text-xl mb-5">Customer Service</div>
+        <div className="text-xl mb-5 font-bold">Customer Service</div>
         <div className="mb-2">Terms & Privacy Policy</div>
         <div>Return Policy</div>
       </div>
 
       <div>
-        <div className="text-xl mb-5">Language</div>
+        <div className="text-xl mb-5 font-bold">Language</div>
         <div className="flex flex-col space-y-2">
           <div className="flex items-center">
             <input
@@ -16,7 +16,6 @@ const Footer = () => {
               id="option1"
               name="options"
               className="form-radio text-blue-500 h-5 w-5"
-              style={{ "--tw-ring-color": "#3b82f6" }}
             />
             <label htmlFor="option1" className="ml-2">
               Myanmar (Unicode)
@@ -27,7 +26,7 @@ const Footer = () => {
       </div>
 
       <div>
-        <div className="text-xl mb-5">Contact Us</div>
+        <div className="text-xl mb-5 font-bold">Contact Us</div>
         <div className="">
           Lay Daunt Kan Main Road, Cashmere Stop, Near Zawana Thingangyn Tsp,
           Yangon{" "}
@@ -36,7 +35,7 @@ const Footer = () => {
       </div>
 
       <div>
-        <div className="text-xl">Download Our App</div>
+        <div className="text-xl font-bold">Download Our App</div>
         <img
           src="https://www.qr-generator.nu/qrcode.svg?download=1"
           className="h-32"
@@ -45,7 +44,7 @@ const Footer = () => {
       </div>
 
       <div>
-        <div className="mb-5 mt-3 text-xl">Payment</div>
+        <div className="mb-5 mt-3 text-xl font-bold">Payment</div>
         <div className="flex space-x-2">
           <img
             src="https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/75/b2/f0/75b2f0ee-c25d-d057-8392-56801d19476c/AppIcon-0-1x_U007emarketing-0-5-0-85-220.png/1200x600wa.png"
@@ -62,13 +61,31 @@ const Footer = () => {
 
       <div>
         <div className="mb-5 mt-3 text-xl">Follow Us On</div>
-        <div className="flex space-x-2">
+        <div className="flex space-x-2 ">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png"
-            alt="Facebook Logo"
+            alt=""
             className="h-8"
           />
-          {/* Add similar img tags for other social media icons */}
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/2048px-Instagram_logo_2022.svg.png"
+            alt=""
+            className="h-8 ps-2"
+          />
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDJ09xPiDMl_yj5TeG2X0NL9Zh0jG6xoRtMIhal6cVVg&s"
+            className="h-8"
+          />
+          <img
+            src="https://seeklogo.com/images/T/telegram-logo-6E3A371CF2-seeklogo.com.png"
+            alt=""
+            className="h-8  pe-2"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/512px-Logo_of_Twitter.svg.png"
+            alt=""
+            className="h-8 pt-1"
+          />
         </div>
       </div>
     </div>
