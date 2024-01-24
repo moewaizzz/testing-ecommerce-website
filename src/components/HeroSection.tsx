@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
+import { FaSearch } from "react-icons/fa";
+import { FaShoppingCart } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 
 const slides = [
   {
@@ -34,11 +37,14 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="h-[500px] w-full m-auto py-2 px-2 relative  ">
+    <div className="h-[500px] w-full relative  ">
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-        className="w-full h-full  rounded-xl bg-center bg-cover duration-500 object-cover"
+        className="w-full h-full   bg-center bg-cover duration-500 object-cover"
       ></div>
+      <FaSearch className="absolute right-32 top-1 text-lg text-white" />
+      <FaShoppingCart className="absolute right-24 top-1 text-lg text-white" />
+      <FaBars className="absolute right-16 top-1 text-lg text-white" />
       <div className=" absolute top-[50%] translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2  bg-black/20 text-white cursor-pointer">
         <BsChevronCompactLeft size={30} onClick={prevSlide} />
       </div>
